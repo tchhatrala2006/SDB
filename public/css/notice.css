@@ -1,0 +1,113 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Beautiful Light Gradient Background */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Glass Effect Card */
+.detail-card{
+    width:450px;
+    padding:40px;
+    border-radius:20px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    color:#fff;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.detail-card h1{
+    text-align:center;
+    margin-bottom:30px;
+    font-weight:600;
+    font-size:26px;
+}
+
+/* Input Fields */
+.detail-card input,
+.detail-card select{
+    width:100%;
+    padding:14px;
+    margin-bottom:18px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    background: rgba(255,255,255,0.85);
+    color:#333;
+    transition:0.3s;
+}
+
+.detail-card input:focus,
+.detail-card select:focus{
+    transform:scale(1.03);
+    box-shadow:0 0 10px rgba(255,255,255,0.6);
+}
+
+/* Modern Button */
+.detail-card button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    color:#fff;
+    transition:0.3s;
+}
+
+.detail-card button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Back Link */
+.detail-card a{
+    display:block;
+    text-align:center;
+    margin-top:20px;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    opacity:0.8;
+}
+
+.detail-card a:hover{
+    opacity:1;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Responsive */
+@media(max-width:500px){
+    .detail-card{
+        width:90%;
+        padding:25px;
+    }
+}
